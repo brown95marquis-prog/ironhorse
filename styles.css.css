@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f2f2f2;
+  background: #121212 url('assets/brushed-metal-bg.jpg') center/cover fixed;
+}
+
+/* HEADER */
+.site-header {
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 2px solid #8b0000;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo {
+  height: 60px;
+  border-radius: 8px;
+  transition: filter 0.3s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 8px #8b0000);
+}
+.company-name h1 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.company-name p {
+  font-size: 0.85rem;
+  color: #bfbfbf;
+}
+
+/* NAVIGATION */
+.nav-links a {
+  color: #f2f2f2;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+.nav-links a:hover {
+  color: #8b0000;
+  text-shadow: 0 0 8px #8b0000;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 15%;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+.section h2 {
+  color: #8b0000;
+  margin-bottom: 15px;
+}
+.home {
+  text-align: center;
+}
+.call-btn {
+  background: linear-gradient(to right, #8b0000, #1a0000);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: box-shadow 0.3s;
+}
+.call-btn:hover {
+  box-shadow: 0 0 10px #8b0000;
+}
+
+/* SERVICES */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+.card {
+  background: #1c1c1c;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 6px;
+  transition: box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 10px #8b0000;
+}
+
+/* CONTACT FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+.contact-form input,
+.contact-form textarea {
+  background: #1a1a1a;
+  border: 1px solid #8b0000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.submit-btn {
+  background: linear-gradient(to right, #8b0000, #1a0000);
+  border: none;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.submit-btn:hover {
+  box-shadow: 0 0 10px #8b0000;
+}
+.thank-you-message {
+  display: none;
+  margin-top: 20px;
+  background: rgba(139, 0, 0, 0.1);
+  border: 1px solid #8b0000;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* FOOTER */
+footer {
+  background: #1a1a1a;
+  color: #bfbfbf;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #8b0000;
+}
